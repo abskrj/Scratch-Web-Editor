@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    app: "./src/Index.bs.js",
+    app: "./src/index.js",
   },
   output: {
     // filename: "app.js",
@@ -32,6 +32,16 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"],
+          },
+        },
       },
     ],
   },

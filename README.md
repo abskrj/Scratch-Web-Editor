@@ -2,8 +2,5 @@
 
 To get started:
 
-- Run `npm i` or `yarn` to install dependencies
-- Run `npm run re:start` or `yarn re:start` in one terminal
-- Run `npm start` or `yarn start` on another terminal
-
-Go to http://localhost:3000
+- Run `npm i` to install dependencies
+- Run `npm start` and open http://localhost:3000 to see the app
