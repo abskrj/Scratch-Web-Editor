@@ -1,6 +1,9 @@
 module.exports = {
-  darkMode: "class",
-  purge: ["./src/**/*.js"],
-  variants: {},
-  plugins: [],
+    darkMode: 'class',
+    variants: {},
+    plugins: [],
+    purge: {
+        content: ['./src/**/*.js'],
+        safelist: ['bg-yellow-500', 'bg-purple-500', 'bg-blue-500']
+    }
 };
