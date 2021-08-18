@@ -1,7 +1,6 @@
 import React from 'react';
-import Icon from './Icon';
-import blocks from './../constants/blocks';
-import SidebarItem from './SidebarItem/SidebarItem';
+import blocks from '../constants/blocks';
+import SidebarItem from './SidebarItem';
 import { allowDrop, deleteDiv } from '../utils/dragNDrop';
 
 export default function Sidebar() {

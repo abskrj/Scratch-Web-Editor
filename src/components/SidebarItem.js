@@ -1,7 +1,7 @@
 import React from 'react';
-import { drag } from '../../utils/dragNDrop';
-import getBlockColor from '../../utils/getBlockColor';
-import Icon from './../Icon';
+import { drag } from '../utils/dragNDrop';
+import getBlockColor from '../utils/getBlockColor';
+import Icon from './Icon';
 
 const SidebarItem = ({ title, data }) => {
     const getTextIcon = (data, loc) => {
