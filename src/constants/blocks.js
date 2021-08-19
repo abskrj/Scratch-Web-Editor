@@ -2,11 +2,17 @@ const blocks = {
     Control: [
         {
             text: 'Wait 1 second'
+        },
+        {
+            text: 'Repeat 5 times'
+        },
+        {
+            text: 'Repeat end'
         }
     ],
     Events: [
         {
-            text: 'When #icon clicked',
+            text: 'When $start #icon clicked',
             icon: 'flag'
         }
     ],
@@ -20,11 +26,11 @@ const blocks = {
             text: 'Move 10 steps'
         },
         {
-            text: 'Turn ACW #icon 15 degrees',
+            text: 'Turn $ACW #icon 15 degrees',
             icon: 'undo'
         },
         {
-            text: 'Turn CW #icon 15 degrees',
+            text: 'Turn $CW #icon 15 degrees',
             icon: 'redo'
         }
     ]
