@@ -1,33 +1,36 @@
 const blocks = {
-    'Control': [
+    Control: [
         {
-            'text': 'Wait 1 second'
+            text: 'Wait 1 second'
         }
     ],
-    'Events': [
+    Events: [
         {
-            'text': 'When #icon clicked',
-            'icon': 'flag'
+            text: 'When $start #icon clicked',
+            icon: 'flag'
         }
     ],
-    'Looks': [
+    Looks: [
         {
-            'text': 'Say Hello for 2 seconds'
-        }
-    ],
-    'Motion': [
-        {
-            'text': 'Move 10 steps',
+            text: 'Say Hello for 2 seconds'
         },
         {
-            'text': 'Turn #icon 15 degrees',
-            'icon': 'undo'
+            text: 'Think Hmmm for 3 seconds'
+        }
+    ],
+    Motion: [
+        {
+            text: 'Move 10 steps'
         },
         {
-            'text': 'Turn #icon 15 degrees',
-            'icon': 'redo'
+            text: 'Turn $ACW #icon 15 degrees',
+            icon: 'undo'
+        },
+        {
+            text: 'Turn $CW #icon 15 degrees',
+            icon: 'redo'
         }
     ]
-}
+};
 
 export default blocks;

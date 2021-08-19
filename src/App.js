@@ -1,10 +1,13 @@
-import React from "react";
-import Sidebar from "./components/Sidebar";
+import React from 'react';
+import Sidebar from './components/Sidebar';
 import MidArea from './components/MidArea';
 import PreviewArea from './components/PreviewArea';
 import { deleteSprite, allowDrop } from './utils/dragNDrop';
+import { showWelcome } from './utils/utility';
+const welcome = showWelcome();
 
 export default function App() {
+    welcome();
     return (
         <div
             onDrop={deleteSprite}
