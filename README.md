@@ -5,12 +5,14 @@
 ### Deployed @ [Vercel](https://scratch-web-editor.vercel.app/) && [Netlify](https://scratch-web-editor.netlify.app/)
 
 ### Getting Started
-1. ```git clone https://github.com/abhishekraj272/Scratch-Web-Editor.git```
-2. ```cd Scratch-Web-Editor```
-2. ```yarn install```
-3. ```yarn start```
+
+1. `git clone https://github.com/abhishekraj272/Scratch-Web-Editor.git`
+2. `cd Scratch-Web-Editor`
+3. `yarn install`
+4. `yarn start`
 
 ### Tech Used
+
 1. React
 2. Tailwind CSS
 3. Webpack
