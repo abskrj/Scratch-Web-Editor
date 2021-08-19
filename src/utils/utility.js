@@ -36,3 +36,9 @@ export const turnCat = (cat, degree, dir) => {
     dir = dir === 'CW' ? 1 : -1;
     cat.style.transform += `rotate(${dir * degree}deg)`;
 };
+
+
+export const isGeneratorFunc = (func) => {
+    if (!func) return false;
+    return func.constructor.name === makeRangeIterator.constructor.name;
+};

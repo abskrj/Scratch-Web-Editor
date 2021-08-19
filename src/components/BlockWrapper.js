@@ -7,7 +7,8 @@ function BlockWrapper({ text }) {
         const toHide = splittedText.pop();
         const JSXText = (
             <>
-                {splittedText.join('')} <span className="hidden">{toHide}</span>
+                {splittedText.join('')}
+                <span className="hidden">{toHide}</span>
             </>
         );
         return JSXText;

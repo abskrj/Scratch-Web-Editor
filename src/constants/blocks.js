@@ -19,6 +19,9 @@ const blocks = {
     Looks: [
         {
             text: 'Say Hello for 2 seconds'
+        },
+        {
+            text: 'Think Hmmm for 3 seconds'
         }
     ],
     Motion: [
