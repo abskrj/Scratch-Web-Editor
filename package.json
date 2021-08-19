@@ -33,8 +33,7 @@
         "webpack": "^5.3.2",
         "webpack-cli": "^4.1.0",
         "webpack-dev-server": "^3.11.0",
-        "webpack-merge": "^5.3.0",
-        "react-components": "git+ssh://git@10.1.21.25/autonomous-cloud/react-components.git#falcon-dev/21.7.0"
+        "webpack-merge": "^5.3.0"
     },
     "eslintConfig": {
         "extends": [
