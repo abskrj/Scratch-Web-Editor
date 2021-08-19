@@ -2,12 +2,6 @@ const blocks = {
     Control: [
         {
             text: 'Wait 1 second'
-        },
-        {
-            text: 'Repeat 5 times'
-        },
-        {
-            text: 'Repeat end'
         }
     ],
     Events: [

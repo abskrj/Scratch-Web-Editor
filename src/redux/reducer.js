@@ -1,4 +1,5 @@
 import actionTypes from './actionTypes';
+import { toast } from 'react-hot-toast';
 
 const INITIAL_STATE = {
     tabCount: 1,
@@ -17,7 +18,12 @@ const reducer = (state = INITIAL_STATE, action) => {
                 tabCount: state.tabCount + 1
             };
         case actionTypes.REMOVE_TAB:
-            if (action.payload === 'S1') return state;
+            if (action.payload === 'S1') {
+                toast.error(`Sprint 1 can't be removed`, {
+                    position: 'bottom-left'
+                });
+                return state;
+            }
 
             // Filter tab from tabs array
             const filteredTab = state.tabs.filter(

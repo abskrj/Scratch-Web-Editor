@@ -1,3 +1,6 @@
+import { toast } from 'react-hot-toast';
+import { wlcmMsg1, wlcmMsg2, wlcmMsg3 } from './../constants/wlcmMsg';
+
 export function* makeRangeIterator(times) {
     let iterationCount = 0;
     for (let i = 0; i < times; i++) {
@@ -37,8 +40,17 @@ export const turnCat = (cat, degree, dir) => {
     cat.style.transform += `rotate(${dir * degree}deg)`;
 };
 
-
 export const isGeneratorFunc = (func) => {
     if (!func) return false;
     return func.constructor.name === makeRangeIterator.constructor.name;
+};
+
+export const showWelcome = () => {
+    let count = 0;
+    return function () {
+        if (count++ > 0) return;
+        toast.success(wlcmMsg1, { position: 'bottom-left' });
+        toast.success(wlcmMsg2, { position: 'bottom-left' });
+        toast.success(wlcmMsg3, { position: 'bottom-left' });
+    };
 };
