@@ -19,3 +19,4 @@
 4. Babel
 5. React Hot Toast
 6. Redux
+7. HTML
